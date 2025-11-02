@@ -35,14 +35,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
               Descubra o 'grão milagroso' que está revolucionando a perda de peso. Mais potente que Ozempic e Mounjaro, porém 100% natural e seguro.
             </p>
-            <ul className="mt-6 space-y-3 text-left inline-block">
-              {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckIcon className="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">{benefit}</span>
-                </li>
-              ))}
-            </ul>
             <div className="mt-8">
               <a 
                 href={whatsappLink} 
@@ -55,6 +47,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
               </a>
               <p className="mt-1 text-sm text-red-600 font-bold">Vagas limitadas. Garanta a sua agora!</p>
             </div>
+            <ul className="mt-8 space-y-3 text-left inline-block">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="flex items-start">
+                  <CheckIcon className="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">{benefit}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
