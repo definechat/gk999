@@ -28,8 +28,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center">
           <div className="w-full text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
-              O Segredo para Emagrecer Rápido, <span className="text-emerald-600">Sem Passar Fome.</span>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+              Suplemento Alimentar Poderoso:<br /> O Segredo para Emagrecer Rápido, <span className="text-emerald-600">Sem Passar Fome.</span>
             </h1>
             <p className="mt-2 text-lg text-gray-500 font-medium tracking-wider uppercase">suplemento natural</p>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
