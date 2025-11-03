@@ -8,17 +8,15 @@ const StarIcon = () => (
 );
 
 interface TestimonialCardProps {
-  imgSrc: string;
   name: string;
   age: number;
   result: string;
   quote: string;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ imgSrc, name, age, result, quote }) => (
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, age, result, quote }) => (
   <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 flex flex-col items-center text-center">
-    <img src={imgSrc} alt={`Depoimento de ${name}`} className="w-24 h-24 rounded-full object-cover shadow-md" />
-    <div className="flex mt-4">
+    <div className="flex">
       {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
     </div>
     <blockquote className="mt-4 italic text-gray-600">"{quote}"</blockquote>
@@ -32,21 +30,18 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ imgSrc, name, age, re
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      imgSrc: "https://picsum.photos/seed/maria/100/100",
       name: "Maria S.",
       age: 42,
       result: "Perdeu 12kg!",
       quote: "Nunca imaginei que seria tão fácil! Me sinto mais jovem e cheia de energia. Recomendo para todas as minhas amigas."
     },
     {
-      imgSrc: "https://picsum.photos/seed/juliana/100/100",
       name: "Juliana P.",
       age: 35,
       result: "Perdeu 15kg!",
       quote: "Depois de anos tentando de tudo, finalmente encontrei algo que funciona. Minha autoestima mudou completamente."
     },
     {
-      imgSrc: "https://picsum.photos/seed/carla/100/100",
       name: "Carla M.",
       age: 29,
       result: "Perdeu 8kg!",
