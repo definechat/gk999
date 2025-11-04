@@ -5,7 +5,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import FinalCtaSection from './components/FinalCtaSection';
 import Footer from './components/Footer';
 
-const WHATSAPP_GROUP_LINK = "whatsapp://send?phone=5584996224700&text=Olá,%20quero%20entrar%20no%20grupo!";
+const WHATSAPP_GROUP_LINK = "https://chat.whatsapp.com/Ey8YDUZXrI7AWaY9EU7gi0";
 
 const App: React.FC = () => {
   return (
