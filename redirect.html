@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando para o Grupo VIP...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7fafc;
+            color: #4a5568;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 90%;
+        }
+
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border-left-color: #25D366; /* Cor do WhatsApp */
+            animation: spin 1s ease-in-out infinite;
+            margin: 0 auto 1.5rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <p>Aguarde um momento...<br>Você será direcionado(a) automaticamente para o nosso grupo.</p>
+    </div>
+
+    <script>
+      /**
+       * Redireciona o usuário após 3 segundos (3000 milissegundos).
+       * Usando window.location.replace() para evitar que esta página de redirecionamento
+       * seja adicionada ao histórico de navegação do navegador.
+       */
+      setTimeout(function() {
+          window.location.replace('https://chat.whatsapp.com/Ey8YDUZXrI7AWaY9EU7gi0');
+      }, 3000);
+    </script>
+</body>
+</html>
