@@ -38,8 +38,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
             <div className="mt-8">
               <a 
                 href={whatsappLink} 
-                target="_blank" 
-                rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
               >
                 <WhatsAppIcon className="w-7 h-7 mr-3" />

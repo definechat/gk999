@@ -20,8 +20,6 @@ const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ whatsappLink }) => {
         <div className="mt-8">
           <a
             href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto bg-white hover:bg-gray-100 text-emerald-600 font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
           >
             SIM, QUERO GARANTIR MINHA VAGA!

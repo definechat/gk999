@@ -22,8 +22,6 @@ const Header: React.FC<HeaderProps> = ({ whatsappLink }) => {
       <div className="container mx-auto px-4">
         <a 
           href={whatsappLink} 
-          target="_blank" 
-          rel="noopener noreferrer" 
           className="flex items-center justify-center py-3 text-emerald-600 hover:text-emerald-700 transition-colors duration-300"
         >
           <span className="text-xl lg:text-2xl font-bold tracking-wide">Emagreça urgente Grupo</span>
