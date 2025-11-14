@@ -56,11 +56,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
             </ul>
 
             <div className="mt-12 flex justify-center">
-              <img 
-                src="https://i.imgur.com/2qqdnb2.jpeg" 
-                alt="Resultados reais" 
-                className="rounded-xl shadow-2xl border-4 border-white w-full max-w-2xl transform hover:scale-105 transition-transform duration-300"
-              />
+              <a href={whatsappLink} className="block w-full max-w-2xl">
+                <img 
+                  src="https://i.imgur.com/2qqdnb2.jpeg" 
+                  alt="Resultados reais" 
+                  className="rounded-xl shadow-2xl border-4 border-white w-full transform hover:scale-105 transition-transform duration-300"
+                />
+              </a>
             </div>
             
           </div>

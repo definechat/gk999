@@ -5,7 +5,7 @@ import FinalCtaSection from './components/FinalCtaSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  const WHATSAPP_DIRECT_LINK = "whatsapp://send?phone=5584996224700&&text=Ol%C3%A1,%20Quero%20Emagrecer%20Urgente%20! ";
+  const WHATSAPP_DIRECT_LINK = "whatsapp://chat?code=DSjss39ZSN701B8akqXsHL";
 
   return (
     <>
