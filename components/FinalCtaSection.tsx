@@ -4,6 +4,12 @@ interface FinalCtaSectionProps {
   whatsappLink: string;
 }
 
+const WhatsAppIcon: React.FC<{ className?: string }> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16.6 14.2c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.7.8-.8 1-.2.2-.3 0c-.2-.1-.7-.2-1.4-.8-.5-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3s.1-.2.2-.3.1-.2 0-.3c0-.1-.6-1.5-.8-2.1-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.2-.6.4-.2.2-.7.7-.7 1.7 0 1 .7 2 .8 2.1.1.1 1.5 2.3 3.6 3.2.5.2.8.3 1.1.4.5.1.9.1 1.2.1.4 0 1-.2 1.2-.4.2-.2.2-.8.1-1zM12 2a10 10 0 100 20 10 10 0 000-20zm0 18.2c-4.5 0-8.2-3.7-8.2-8.2S7.5 3.8 12 3.8s8.2 3.7 8.2 8.2-3.7 8.2-8.2 8.2z" />
+    </svg>
+);
+
 const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ whatsappLink }) => {
   return (
     <section className="bg-emerald-600 text-white py-20">
@@ -20,8 +26,9 @@ const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ whatsappLink }) => {
         <div className="mt-8">
           <a
             href={whatsappLink}
-            className="inline-block w-full sm:w-auto bg-white hover:bg-gray-100 text-emerald-600 font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            className="inline-flex items-center justify-center w-full sm:w-auto bg-white hover:bg-gray-100 text-emerald-600 font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform transition-transform duration-300 animate-pulse-scale hover:animate-none hover:scale-105"
           >
+            <WhatsAppIcon className="w-7 h-7 mr-3" />
             SIM, QUERO GARANTIR MINHA VAGA!
           </a>
         </div>

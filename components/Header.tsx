@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ whatsappLink }) => {
       <div className="container mx-auto px-4">
         <a 
           href={whatsappLink} 
-          className="flex items-center justify-center py-3 text-emerald-600 hover:text-emerald-700 transition-colors duration-300"
+          className="flex items-center justify-center py-3 text-emerald-600 hover:text-emerald-700 transition-colors duration-300 animate-pulse-scale"
         >
           <span className="text-xl lg:text-2xl font-bold tracking-wide">Emagreça urgente Grupo</span>
           <WhatsAppIcon className="w-7 h-7 ml-2" />

@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface HeroSectionProps {
@@ -38,7 +39,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
             <div className="mt-8">
               <a 
                 href={whatsappLink} 
-                className="inline-flex items-center justify-center w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                className="inline-flex items-center justify-center w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-lg text-xl shadow-lg transform transition-transform duration-300 animate-pulse-scale hover:animate-none hover:scale-105"
               >
                 <WhatsAppIcon className="w-7 h-7 mr-3" />
                 ENTRE NO GRUPO VIP
@@ -53,6 +54,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ whatsappLink }) => {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-12 flex justify-center">
+              <img 
+                src="https://i.imgur.com/2qqdnb2.jpeg" 
+                alt="Resultados reais" 
+                className="rounded-xl shadow-2xl border-4 border-white w-full max-w-2xl transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
           </div>
         </div>
       </div>
