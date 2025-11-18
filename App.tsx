@@ -5,7 +5,7 @@ import FinalCtaSection from './components/FinalCtaSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  const WHATSAPP_DIRECT_LINK = "whatsapp://chat?code=DSjss39ZSN701B8akqXsHL";
+  const WHATSAPP_DIRECT_LINK = "whatsapp://chat?code=F5AO9r1uqT2Kcz7xB7Q1pT";
 
   return (
     <>
